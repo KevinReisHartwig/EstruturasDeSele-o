@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="EstruturasDeRepeticão">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="16"/>
+    <property name="source" value="16"/>
+    <path id="EstruturasDeRepeticão.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <path id="run.ex1 (4).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex10.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex11.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex12.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex2 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex3 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex4 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex5 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex6 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex7 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex8 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex9 (1).classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex13.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex14.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <path id="run.ex15.classpath">
+        <path refid="EstruturasDeRepeticão.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="EstruturasDeRepeticão.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="ex1 (4)">
+        <java classname="ex1" failonerror="true" fork="yes">
+            <classpath refid="run.ex1 (4).classpath"/>
+        </java>
+    </target>
+    <target name="ex10">
+        <java classname="ex10" failonerror="true" fork="yes">
+            <classpath refid="run.ex10.classpath"/>
+        </java>
+    </target>
+    <target name="ex11">
+        <java classname="ex11" failonerror="true" fork="yes">
+            <classpath refid="run.ex11.classpath"/>
+        </java>
+    </target>
+    <target name="ex12">
+        <java classname="ex12" failonerror="true" fork="yes">
+            <classpath refid="run.ex12.classpath"/>
+        </java>
+    </target>
+    <target name="ex2 (1)">
+        <java classname="ex2" failonerror="true" fork="yes">
+            <classpath refid="run.ex2 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex3 (1)">
+        <java classname="ex3" failonerror="true" fork="yes">
+            <classpath refid="run.ex3 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex4 (1)">
+        <java classname="ex4" failonerror="true" fork="yes">
+            <classpath refid="run.ex4 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex5 (1)">
+        <java classname="ex5" failonerror="true" fork="yes">
+            <classpath refid="run.ex5 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex6 (1)">
+        <java classname="ex6" failonerror="true" fork="yes">
+            <classpath refid="run.ex6 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex7 (1)">
+        <java classname="ex7" failonerror="true" fork="yes">
+            <classpath refid="run.ex7 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex8 (1)">
+        <java classname="ex8" failonerror="true" fork="yes">
+            <classpath refid="run.ex8 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex9 (1)">
+        <java classname="ex9" failonerror="true" fork="yes">
+            <classpath refid="run.ex9 (1).classpath"/>
+        </java>
+    </target>
+    <target name="ex13">
+        <java classname="ex13" failonerror="true" fork="yes">
+            <classpath refid="run.ex13.classpath"/>
+        </java>
+    </target>
+    <target name="ex14">
+        <java classname="ex14" failonerror="true" fork="yes">
+            <classpath refid="run.ex14.classpath"/>
+        </java>
+    </target>
+    <target name="ex15">
+        <java classname="ex15" failonerror="true" fork="yes">
+            <classpath refid="run.ex15.classpath"/>
+        </java>
+    </target>
+</project>
